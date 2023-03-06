@@ -215,7 +215,7 @@ warehouses:
       roles:
         - prod_dbt_service_role
   prod_ingest_wh:
-    comment:  Ingest warehouse."
+    comment:  "Ingest warehouse."
     size: "x-small"
     auto_suspend: 60
     auto_resume: true

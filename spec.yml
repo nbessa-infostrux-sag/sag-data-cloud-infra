@@ -386,19 +386,19 @@ roles:
     grant_to:
       roles:
         - dev_egest_admin_role
-        - dev_segment_egest_service_role
+        - dev_egest_service_role
   uat_egest_read_role:
     comment: "Egest uat layer's read only access."
     grant_to:
       roles:
         - uat_egest_admin_role
-        - uat_segment_egest_service_role
+        - uat_egest_service_role
   prod_egest_read_role:
     comment: "Egest prod layer's read only access."
     grant_to:
       roles:
         - prod_egest_admin_role
-        - prod_segment_egest_service_role
+        - prod_egest_service_role
   dev_egest_admin_role:
     comment: "Egest dev layer's highest level of access."
     grant_to:
@@ -437,26 +437,26 @@ roles:
     grant_to:
       roles:
         - sysadmin
-  prod_segment_ingest_service_role:
+  prod_ingest_service_role:
     comment: "Segment data source service role."
     grant_to:
       users:
-        - prod_segment_ingest_user
-  dev_segment_egest_service_role:
+        - prod_ingest_user
+  dev_egest_service_role:
     comment: "Segment dev data destination service role."
     grant_to:
       users:
-        - dev_segment_egress_user
-  uat_segment_egest_service_role:
+        - dev_egress_user
+  uat_egest_service_role:
     comment: "Segment UAT data destination service role."
     grant_to:
       users:
-        - uat_segment_egress_user
-  prod_segment_egest_service_role:
+        - uat_egress_user
+  prod_egest_service_role:
     comment: "Segment prod data destination service role."
     grant_to:
       users:
-        - prod_segment_egress_user
+        - prod_egress_user
   dev_dbt_service_role:
     comment: "dbt dev service role."
     grant_to:

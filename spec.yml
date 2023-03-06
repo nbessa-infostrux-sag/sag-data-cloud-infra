@@ -438,22 +438,22 @@ roles:
       roles:
         - sysadmin
   prod_ingest_service_role:
-    comment: "Segment data source service role."
+    comment: "Data source service role."
     grant_to:
       users:
         - prod_ingest_user
   dev_egest_service_role:
-    comment: "Segment dev data destination service role."
+    comment: "Dev data destination service role."
     grant_to:
       users:
         - dev_egress_user
   uat_egest_service_role:
-    comment: "Segment UAT data destination service role."
+    comment: "UAT data destination service role."
     grant_to:
       users:
         - uat_egress_user
   prod_egest_service_role:
-    comment: "Segment prod data destination service role."
+    comment: "Prod data destination service role."
     grant_to:
       users:
         - prod_egress_user

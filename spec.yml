@@ -365,7 +365,6 @@ roles:
     grant_to:
       roles:
         - prod_analyze_admin_role
-        - prod_tableau_service_role
   dev_analyze_admin_role:
     comment: "Analyze dev layer's highest level of access."
     grant_to:
